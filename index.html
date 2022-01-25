@@ -42,7 +42,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
-		alert(allergy_count);
+	
 
         }
 
@@ -50,6 +50,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 
+	function results(){
+		total_count = allergy_count + cold_count
+		allergy_percent = (allergy_count / total_count) * 100
+		cold_percent = (cold_count / total_count) * 100
+		<p>Allergy percentage:</p> + (allergy_percentage) + <p>Cold percentage:</p> + (cold_percentage)
+		
   </script>
 
 
@@ -109,8 +115,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 	<p>Do you have a fever?</p>
-	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
-	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> No</a>
+	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black"> No</a>
 	</div>
 </div>	
 	
@@ -121,8 +127,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Do you have a sore throat?</p>   
-	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
-	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> No</a>
+	<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black"> No</a>
     	</div>
 </div>
 
@@ -133,8 +139,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Are your symptoms seasonal or chronic?</p>   
-	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black"> No</a>
+	<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black"> No</a>
     	</div>
 </div>
 
