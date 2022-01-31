@@ -51,10 +51,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 
 	function results(){
-		var total_count = allergy_count + cold_count
-		var allergy_percent = (allergy_count / total_count) * 100
-		var cold_percent = (cold_count / total_count) * 100
-		var resultText = document.getElementByld("results()")
+		var allergy_percent = (allergy_count / 4)* 100;
+		var cold_percent = (cold_count / 4)* 100;
+		var resultText = document.getElementByld("results()");
 		resultText.innerHTML = "Probability it is allergies =" + allergy_percent + "<br> Probability it is a cold =" + cold_percent;
 
 	}
