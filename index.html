@@ -95,6 +95,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<h1>Cold or Allergies?</h1>
 	<!--The title of the page is 'Cold or Allergies-->
 </div>
+
+
 	
 <div id="content" class="w3-container">
 	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p> 
@@ -107,27 +109,26 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> 
 		<!--This is a disclaimer so no user uses the code as a medical diagnosis.-->
 
-<div class="page" id="one"> 
+<div class="page" id="one">
 	<!--The page is understood by the code as page one (the id is one)-->
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1> 
+		<h1>Question 1</h1>
 		<!--The title of the page is 'Question 1.' This indicates to users that the page will display the first question of the survey-->
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Are your eyes watery or itchy?</p> 
+        <p>Are your eyes watery or itchy?</p>   
 		<!--This is the first question and only question in the page.-->
-	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> 
+	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
 		<!--This is the button users will choose to indicate they have watery and/or itchy eyes. Choosing this answer will increase the allergy count by one, and will have no effect on the cold count. The href statement will take the user to page two.-->
-	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a> 
+	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
 		<!--This is the button users will choose to indicate they do not have watery and/or itchy eyes. Choosing this answer will increase the cold count by one, and will have no effect on the allergy count. The href statement will take the user to page two.-->
     	</div>
 </div>
 
 <div class="page" id="two"> 
 	<!--The page is understood by the code as page two (the id is two)-->
-	
-	<div class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1> 
 		<!--The title of the page is 'Question 2.' This indicates to users that the page will display the second question of the survey-->
 	</div>
@@ -143,8 +144,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </div>	
 	
 <div class="page" id="three"> 
-		<!--The page is understood by the code as page three (the id is three)-->
-	
+	<!--The page is understood by the code as page three (the id is three)-->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1> 
 		<!--The title of the page is 'Question 3.' This indicates to users that the page will display the third question of the survey-->
