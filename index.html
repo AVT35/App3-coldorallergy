@@ -17,10 +17,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The goal of the code is for the user to be able to document whether the symptoms he/she is experiencing is a cold or an allergy. Based on user responses, the code calculates the probability that the user symptoms are that of a cold or an allergy. 
  
 Known Issues:
-blah, blah, blah, blah
+The buttons were difficult to code for. I had trouble getting the buttons to indicate the pages should change, and the code ended up being a list format for a while. 
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -36,20 +36,25 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
+        //The allergy and cold counts are initially set to 0. Based on the user choice of answers, the counts will either increase by 1 or remain the same. 
+	var allergy_count = 0;
         var cold_count = 0;
 
 
-        function allergyAdd(){
+        //This is the function to increase the allergy count by 1. If the user chooses an answer indicating they may have an allergy, this will increase by 1. 
+	function allergyAdd(){
             allergy_count = allergy_count + 1;
 	
 
         }
 
-        function coldAdd(){
+        //This is the function to increase the cold count by 1. If the user chooses an answer indicating they may have an cold, this will increase by 1.
+	function coldAdd(){
             cold_count = cold_count + 1;
         }
 
+	/*This is the function to calculate results, which is done by adding allergy and cold counts to create a total, and using the percentage formula to 
+	calculate probabilities. The results will then be displayed with an alert*/
 	function results(){
 		var total = allergy_count + cold_count;
 		alert("Probability it is allergies =" + (allergy_count / total)* 100 + "<br> Probability it is a cold =" + (cold_count / total)* 100);
